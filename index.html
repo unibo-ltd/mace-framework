@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MACE Framework</title>
+    <style>
+        .area-box {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .area-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .stripe {
+            width: 8px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .phase-family-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .phase-family-text {
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
+            /* Adjust for centering with rotation */
+            white-space: nowrap;
+            /* Keep text from wrapping */
+
+            text-transform: uppercase;
+            font-size: 1.5em;
+            opacity: 0.6;
+
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+
+    <div class="container mx-auto p-10">
+
+        <!-- Page Title -->
+        <h1 class="text-5xl text-center font-bold mb-2">The MACE Framework</h1>
+        <h2 class="text-xl text-center text-gray-600 mb-8">Optimizing player engagement and retention</h2>
+
+        <!-- Introductory Text Box -->
+        <div class="p-6 mb-8">
+            <p class="text-lg text-gray-700">In the dynamic realm of iGaming, our journey to create unparalleled player
+                engagement is defined by four pillars: Monitoring the ever-changing landscape, Analyzing deep-rooted
+                player behavior, Conceptualizing standout campaigns, and Executing with precision. The MACE framework is
+                our beacon in this voyage, shaping the future of gaming experiences.</p>
+        </div>
+
+        <!-- Player Value Loop -->
+        <div class="flex items-start mb-6">
+            <div class="flex-shrink-0 w-2/5 pr-8">
+                <img src="loop.png" alt="Player Value" class="w-full rounded-full object-cover">
+            </div>
+
+            <!-- Phase Descriptions -->
+            <div class="flex flex-wrap items-start w-full">
+                <div class="flex w-full">
+                    <div class="flex flex-col w-11/12">
+                        <!-- Phase: Monitor -->
+                        <div class="relative p-6 bg-blue-50 area-box rounded-md">
+                            <div class="stripe bg-blue-600"></div>
+                            <h3 class="mb-4 text-blue-700 font-semibold text-xl">Monitor</h3>
+                            <p class="text-gray-700">Observe real-time data to discover key insights into player
+                                behavior and game trends.</p>
+                        </div>
+                        <!-- Phase: Analyze -->
+                        <div class="relative p-6 bg-green-50 area-box rounded-md">
+                            <div class="stripe bg-green-600"></div>
+                            <h3 class="mb-4 text-green-700 font-semibold text-xl">Analyze</h3>
+                            <p class="text-gray-700">Decode data to further discover player preferences and uncover
+                                profitable campaign opportunities.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="phase-family-box bg-gray-100 area-box rounded-md flex items-center justify-center w-1/12 mx-4">
+                        <p class="phase-family-text">Discovery</p>
+                    </div>
+                </div>
+
+                <div class="flex w-full mt-6">
+                    <div class="flex flex-col w-11/12">
+                        <!-- Phase: Conceptualize -->
+                        <div class="relative p-6 bg-purple-50 area-box rounded-md">
+                            <div class="stripe bg-purple-600"></div>
+                            <h3 class="mb-4 text-purple-700 font-semibold text-xl">Conceptualize</h3>
+                            <p class="text-gray-700">Craft detailed plans for captivating campaigns, unique rewards, and
+                                personalized content.</p>
+                        </div>
+                        <!-- Phase: Execute -->
+                        <div class="relative p-6 bg-red-50 area-box rounded-md">
+                            <div class="stripe bg-red-600"></div>
+                            <h3 class="mb-4 text-red-700 font-semibold text-xl">Execute</h3>
+                            <p class="text-gray-700">Implement and craft your creative visions into live campaigns,
+                                fine-tuning in real-time for optimal impact and profitability.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="phase-family-box bg-gray-100 area-box rounded-md flex items-center justify-center w-1/12 mx-4">
+                        <p class="phase-family-text">Crafting</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-6 bg-white rounded-lg shadow-md">
+
+        <!-- Scenario -->
+        <h2 class="text-2xl font-semibold mb-4 border-b pb-2">Scenario</h2>
+        <p class="mb-6">Encourage players to engage with multiple games on the online casino platform via a thematic, mission-based campaign.</p>
+
+        <!-- MACE Framework Application -->
+        <h3 class="text-2xl font-semibold mb-4 border-b pb-2">MACE Framework Application</h3>
+
+        <!-- Discovery Phase -->
+        <div class="mb-6">
+            <h4 class="text-xl font-medium mb-3">Discovery Phase</h4>
+
+            <!-- Monitor -->
+
+            <div class="relative p-6 bg-blue-50 area-box rounded-md">
+                <div class="stripe bg-blue-600"></div>
+                <h5 class="text-lg font-semibold text-blue-700">Monitor</h5>
+                <p>Track player engagement metrics across various campaigns, focusing on:</p>
+                <ul class="list-disc pl-5">
+                    <li>Retention rates during thematic events.</li>
+                    <li>Frequency of game switches within single sessions.</li>
+                    <li>Engagement peaks: Identifying time frames where player involvement is at its maximum.</li>
+                    <li>Correlation between in-game purchases and themed events.</li>
+                </ul>
+            </div>
+
+            <!-- Analyze -->
+            <div class="relative p-6 bg-green-50 area-box rounded-md">
+                <div class="stripe bg-green-600"></div>
+                <h5 class="text-lg font-semibold text-green-700">Analyze</h5>
+                <p>Dive deep into the collected data to:</p>
+                <ul class="list-disc pl-5">
+                    <li>Isolate campaigns that have the highest engagement peaks.</li>
+                    <li>Determine if players show a preference for certain thematic elements over others.</li>
+                    <li>Quantify the impact of a narrative or theme on in-game purchases and retention.</li>
+                    <li>Segment players based on their engagement behavior: 'Explorers' who hop between games, 'Conquerors' who aim to master one game, etc.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Crafting Phase -->
+        <div class="mb-6">
+            <h4 class="text-xl font-medium mb-3">Crafting Phase</h4>
+
+            <!-- Conceptualize -->
+            <div class="relative p-6 bg-purple-50 area-box rounded-md">
+                <div class="stripe bg-purple-600"></div>
+                <h5 class="text-lg font-semibold text-purple-700">Conceptualize</h5>
+                <ul class="list-disc pl-5">
+                    <li><strong>Theme:</strong> "The Quest for the Casino's Lost Treasure"</li>
+                    <li><strong>Missions:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>Mystical Slots Voyage: Spin the reels of "Desert Mirage", "Ocean Odyssey", and "Jungle Jewels" slots, seeking pieces of a mystical map.</li>
+                            <li>Tabletop Mountain Challenge: Triumph in "Blackjack Bastion" and "Roulette Ridge" to unlock the ancient tokens.</li>
+                            <li>Golden Streak Adventure: Maintain a winning streak in any game for three days to reveal the treasure's hiding cave.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Rewards:</strong>
+                        <ul class="list-disc pl-5">
+                            <li>Collectible items (map pieces, tokens) leading to the treasure.</li>
+                            <li>Special 'Treasure Hunter' badge.</li>
+                            <li>Generous in-game currency or real-world rewards for those who complete the quest.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Execute -->
+            <div class="relative p-6 bg-red-50 area-box rounded-md">
+                <div class="stripe bg-red-600"></div>
+                <h5 class="text-lg font-semibold text-red-700">Execute</h5>
+                <ul class="list-disc pl-5">
+                    <li><strong>Launch:</strong> Roll out with interactive trailers, unveiling the legend of the lost treasure. Offer special treasure boosters for purchase, aiding players in their quests.</li>
+                    <li><strong>Engage:</strong> Daily hints or riddles guiding players. Feature and celebrate players' progress, especially those nearing the treasure, fostering a sense of competition.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
